@@ -54,6 +54,7 @@ body {
 .card-body img {
   width: 176px;
   height: 235px;
+  border-radius: 9px;
 }
 
 .soldout-text {

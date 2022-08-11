@@ -6,14 +6,14 @@ export default function Card() {
     return (
         <div className="card-body">
             <p className="soldout-text">sold out</p>
-            <img src={katie} alt="Katie"/>
+            <img src={`../images/${props.img}`} alt="Katie"/>
             <div className="text-container">
                 <div className="star-body">
-                    <img src={star} alt="Star image" />
-                    <p>5.0 <span>(6).USA</span></p>
+                    <img src="/images/star.png" alt="Star image" />
+                    <p>{props.rating} <span>{props.reviewCount}.{props.country}</span></p>
                 </div>
-                <p>Life lessons with Katie Zaferes</p>
-              <p className="person-text">From 136 <span>/ person</span></p>
+                <p>{props.title}</p>
+              <p className="person-text">From {props.price} <span>/ person</span></p>
             </div>
         </div>
     )

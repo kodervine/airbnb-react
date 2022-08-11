@@ -2,7 +2,7 @@ import React from "react"
 import katie from "/Images/katie-zafares.png";
 import star from "/Images/star.png";
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="card-body">
             <p className="soldout-text">sold out</p>
